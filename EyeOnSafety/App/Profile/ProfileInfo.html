@@ -14,32 +14,14 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
     <link href="../../Content/CSS/stylish-portfolio.css" rel="stylesheet">
-    <title>Report an Incident</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='../../Content/CSS/custom.css' rel='stylesheet' type='text/css'>
-    <style>
-        #map {
-            height: 700px;
-            width: 50%;
-            align-content: center;
-            padding-left: 40%;
-            align-content: center;
-            margin-left: 450px;
-        }
-    </style>
 </head>
-<body style="background-image:url(../../Content/Images/Abstract-background.jpg);">
+<body style="background-image:url(../../Content/Images/Abstract-background.jpg)">
+    <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
         <i class="fa fa-bars"></i>
     </a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
-                <i class="fa fa-times"></i>
-            </a>
             <li>
                 <p style="color:white;">Admin User: lanem</p>
                 <br /><br />
@@ -64,18 +46,63 @@
             </li>
         </ul>
     </nav>
-    <h1 style="text-align:center;color:white;">Create an Incident </h1>
-    <iframe width="85%" height="700px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="margin-left: 7.5%; margin-right: 7.5%" src="https://compaidinc.maps.arcgis.com/apps/webappviewer/index.html?id=afb6451722114c42bbd69048985cf398"></iframe>
-    <br /><br />
-    <div class="container text-center" style="color:white;">
-        <h3>About This Map</h3>
-        <p style="font-size:large; text-align:justify ">
-            Using this map, you can report different types of location-specific incidents. With each incident reported, our forecasting model grows in accuracy.<br />
-        </p>
+    <div class="container">
+        <br/><br/>
+        <h1 class="text-center text-white">Profile Information: lanem</h1>
+        <!--<img src="img/logo.jpg" align="right" id="logoProfile" height="250px" width="300px" />-->
+        <div class="container bg-white">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="font-weight-bold">First Name</td>
+                        <td class="font-weight-bold">Last Name</td>
+                        <td class="font-weight-bold">Phone Number</td>
+                        <td class="font-weight-bold">Email Address</td>
+                        <td class="font-weight-bold">Skills/Resources</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Matthew</td>
+                        <td>Lane</td>
+                        <td>301-333-5697</td>
+                        <td>LaneMatt@gmail.com</td>
+                        <td>Snow Plow; Drone</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="alert-message alert-message-success">
+                        <h4>
+                            Request
+                        </h4>
+                        <p>
+                         Snow Plow Request<br />
+                         Address: 436 Ridgeview Avenue, Elizabethtown PA, 17022<br />
+                        <strong>
+                            For more information, please call 301-222-2222
+                        </strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="alert-message alert-message-success">
+                        <h4>
+                            Request
+                        </h4>
+                        <p>
+                        Drone Fly-Over Request <br/>
+                        Address: 3811 Paxton Street, Harrisburg PA.<br />
+                        <strong>For more information, please call 240-395-4095</strong>.<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
-    <script type="text/javscript">
-    </script>
     <!-- Bootstrap core JavaScript -->
     <script src="../../Vendor/jquery/jquery.min.js"></script>
     <script src="../../Vendor/popper/popper.min.js"></script>
@@ -84,9 +111,5 @@
     <script src="../../Vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="../../Scripts/stylish-portfolio.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk__WL9hsftcUf8mvpvSwMtwEIX0OqU80&callback=initMap"></script>
-    <script src="../../Scripts/custom.js"></script>
 </body>
 </html>

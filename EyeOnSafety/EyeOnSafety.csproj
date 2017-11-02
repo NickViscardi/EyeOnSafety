@@ -154,6 +154,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Graphs\Graphs.html" />
+    <Content Include="App\Profile\ProfileInfo.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -171,6 +173,8 @@
     <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Images\Abstract-background.jpg" />
     <Content Include="Content\Images\bg.jpg" />
+    <Content Include="Content\Images\Crash_Events.jpeg" />
+    <Content Include="Content\Images\Crime_Events.jpeg" />
     <Content Include="Content\Images\harrisburg.jpg" />
     <Content Include="Content\Images\HarrisburgBackground.jpg" />
     <Content Include="Content\Images\logo.jpg" />
@@ -179,6 +183,7 @@
     <Content Include="Content\Images\red-background.png" />
     <Content Include="Content\Images\Rplot.jpg" />
     <Content Include="Content\Images\shrubs.jpg" />
+    <Content Include="Content\Images\Unsafe_Events.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -972,6 +977,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\EOS - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\EOS - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\EyeOnSafety - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\EyeOnSafety - Web Deploy.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />

@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='../../Content/CSS/custom.css' rel='stylesheet' type='text/css'>
 </head>
-<body style="background-image:url(img/Abstract-Background.jpg)">
+<body style="background-image:url(../../Content/Images/Abstract-background.jpg)">
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
         <i class="fa fa-bars"></i>
@@ -36,10 +36,13 @@
             </li>
 
             <li>
-                <a class="js-scroll-trigger" href="../Home/Index.html">Home</a>
+                <a class="js-scroll-trigger" href="../Home/index.html">Home</a>
             </li>
             <li>
-                <a class="js-scroll-trigger" href="../Profile/Profile.html">Create a Profile</a>
+                <a class="js-scroll-trigger" href="../Profile/Profile.cshtml">Create a Profile</a>
+            </li>
+            <li>
+                <a class="js-scroll-trigger" href="../Graphs/Graphs.html" onclick=$( "#menu-close" ).click();>Predictive Analysis Forecasting</a>
             </li>
             <li>
                 <a class="js-scroll-trigger" href="../CreateIncident/CreateAnIncident.html" onclick=$( "#menu-close" ).click();>Create an Incident</a>
@@ -48,7 +51,7 @@
                 <a class="js-scroll-trigger" href="../ResourceManager/ResourceManager.html" onclick=$( "#menu-close" ).click();>Resource Manager</a>
             </li>
             <li>
-                <a class="js-scroll-trigger" href="../Profile/Profile.html" onclick=$( "#menu-close" ).click();>Your Profile Information</a>
+                <a class="js-scroll-trigger" href="../Profile/ProfileInfo.html" onclick=$( "#menu-close" ).click();>Your Profile Information</a>
             </li>
         </ul>
     </nav>
@@ -197,12 +200,30 @@
                         </table>
 
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg">Submit</button>
-                    <textarea rows="4" cols="30" style="text-align:left;float:right;margin-left:80%"> add comments to send in email </textarea>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Send Alert to Selected Users</button>
                 </div>
 
             </div>
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close text-center" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center">Alert Sent!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>An alert has been sent to the selected users.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+        
         <script type="text/javascript">
             $(document).ready(function () {
                 $('.filterable .btn-filter').click(function () {
