@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>EyeOnSafety</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../../Vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../../Vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="../../Content/CSS/stylish-portfolio.css" rel="stylesheet">
+</head>
+<body>
+    <div class="crossfade">
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+    </div>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+        <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+                <i class="fa fa-times"></i>
+            </a>
+            <li>
+                <p style="color:white;">Admin User: lanem</p>
+                <br /><br />
+            </li>
+            <li>
+                <a class="js-scroll-trigger" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="js-scroll-trigger" href="../../App/Profile/Profile.cshtml">Create a Profile</a>
+            </li>
+            <li>
+                <a class="js-scroll-trigger" href="../../App/CreateIncident/CreateAnIncident.html" onclick=$( "#menu-close" ).click();>Create an Incident</a>
+            </li>
+            <li>
+                <a class="js-scroll-trigger" href="../../App/ResourceManager/ResourceManager.html" onclick=$( "#menu-close" ).click();>Resource Manager</a>
+            </li>
+            <li>
+                <a class="js-scroll-trigger" href="../../App/Profile/ProfileInfo.html" onclick=$( "#menu-close" ).click();>Your Profile Information</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header class="header" style="color:#efecea" id="top">
+        <div class="text-vertical-center ">
+            <h1>EyeOnSafety</h1>
+            <br>
+            <div class="jumbotron">
+                <div class="large-font">
+                    EyeOnSafety is an interactive web application that allows you to visualize<br /> years of historical vehicle collision and crime data as provided by Pennsylvania's Open Data Portal. <br />To see how it all works, look at our map below.<br />
+                </div>
+            </div>
+            <br /><br />
+            <a href="#contact" class="btn btn-dark btn-lg js-scroll-trigger">Look at our Map</a>
+            <a href="#callout" class="btn btn-dark btn-lg js-scroll-trigger">Look at our Forecast </a>
+            <br /><br />
+
+        </div>
+    </header>
+    <!-- About -->
+    <!-- Services -->
+    <!-- Callout -->
+    <aside class="callout" id="callout">
+        <div class="text-vertical-center">
+            <h1>Forecast</h1>
+            <img src="../../Content/Images/Rplot.jpg" style="margin-left:20px" />
+
+            <p class="text-center large-font">
+                <br /><br />
+                Using Azure Machine Learning, EyeOnSafety is able to develop a predictive analysis model to demonstrate the frequency<br /> in which incidents—such as vehicle collisions and different types of crime—will occur over the next 5 years.
+            </p>
+        </div>
+    </aside>
+    <!-- Portfolio
+    <!--<section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2>Our Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-fluid" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-fluid" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+    <!-- Call to Action -->
+    <!-- Map -->
+    <div style="background-image:url(../../Content/Images/Abstract-background.jpg)">
+        <section id="contact" style="text-align:center; padding:25px;">
+            <iframe width="100%" height="800px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://compaidinc.maps.arcgis.com/apps/webappviewer/index.html?id=c496319c5f2645a7bfeaec96ca7b7f06"></iframe>
+            <br /><br />
+            <div class="container text-center" style="color:white;">
+                <h3>About This Map</h3>
+                <p style="font-size:large; text-align:justify ">
+                    Using this map, you can analyze historical crash data for the entire state of Pennsylvania
+                    as well as historical crime data for the greater Philadelphia region.
+                    By clicking the filter button located in the upper right-hand corner of the map interface, you may filter the data that appears on the map by a variety of factors—changing the appearance of the heatmaps in real time.<br />
+                </p>
+
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <br><br>
+            <div class="container" style="color:white;">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto text-center">
+                        <h4>
+                            <strong>Computer Aid, Inc. </strong>
+                        </h4>
+                        <p>
+                            3801 Paxton Street
+                            <br>Harrisburg, PA 17102
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-phone fa-fw"></i>
+                                (123) 456-7890
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o fa-fw"></i>
+                                <a href="mailto:name@example.com">viscarn@compaid.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <hr class="small">
+                        <p class="text-muted">Copyright &copy; EyeONSafety INC</p>
+                    </div>
+                </div>
+            </div>
+            <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+                <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+            </a>
+
+        </footer>
+    </div>
+    <script type="text/javascript">
+
+
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../Vendor/jquery/jquery.min.js"></script>
+    <script src="../../Vendor/popper/popper.min.js"></script>
+    <script src="../../Vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../../Vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="../../Scripts/stylish-portfolio.js"></script>
+</body>
+</html>
