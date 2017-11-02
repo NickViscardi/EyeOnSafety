@@ -977,10 +977,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="Properties\PublishProfiles\EOS - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\EOS - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\EyeOnSafety - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\EyeOnSafety - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\EyeOnSafety-v2 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\EyeOnSafety-v2 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
@@ -1026,10 +1025,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="App\Home\Index.html" />
     <Content Include="Vendor\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="Vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
