@@ -11,6 +11,7 @@
     var city = "";
     var state = "";
     var zip = "";
+    var verifiedin = "";
 
     if(IsPost){
         username = Request.Form["username"];
@@ -24,10 +25,11 @@
         zip = Request.Form["zip"];
         phonenumber = Request.Form["phonenumber"];
         email = Request.Form["email"];
+        verifiedin = Request.Form["verfiedin"];
 
         var db = Database.Open("EyeOnSafetyContext");
-        var insertCommand = "INSERT INTO Users (FirstName, LastName, Username, Password, PhoneNumber, EmailAddress,  StreetLine1, StreetLine2, City, State, ZipCode) VALUES(@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10)";
-        db.Execute(insertCommand, firstname, lastname, username, password, phonenumber, email, streetline1, streetline2, city, state, zip);
+        var insertCommand = "INSERT INTO Users (FirstName, LastName, Username, Password, PhoneNumber, EmailAddress,  StreetLine1, StreetLine2, City, State, ZipCode, VerifiedIn) VALUES(@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11)";
+        db.Execute(insertCommand, firstname, lastname, username, password, phonenumber, email, streetline1, streetline2, city, state, zip, verifiedin);
         Response.Redirect("../Home/index.html");
     }
 }
@@ -48,7 +50,7 @@
     <!-- Custom CSS -->
     <link href="../../Content/CSS/stylish-portfolio.css" rel="stylesheet">
 </head>
-<body style="background-image:url(../../Content/Images/Abstract-background.jpg)">
+<body style="background-image:url(../../Content/Images/Abstract-background.jpg);">
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
         <i class="fa fa-bars"></i>
@@ -72,7 +74,7 @@
                 <a class="js-scroll-trigger" href="../Graphs/Graphs.html" onclick=$( "#menu-close" ).click();>Predictive Analysis Forecasting</a>
             </li>
             <li>
-                <a class="js-scroll-trigger" href="../CreateIncident/CreateAnIncident.html" onclick=$( "#menu-close" ).click();>Create an Incident</a>
+                <a class="js-scroll-trigger" href="../CreateIncident/CreateAnIncident.html" onclick=$( "#menu-close" ).click();>Report an Unsafe Event</a>
             </li>
             <li>
                 <a class="js-scroll-trigger" href="../ResourceManager/ResourceManager.html" onclick=$( "#menu-close" ).click();>Resource Manager</a>
@@ -86,7 +88,11 @@
     <h1 style="text-align:center;color:white;">Create a Profile </h1>
     <div class="container">
         <!--<img src="img/logo.jpg" align="right" id="logoProfile" height="250px" width="300px" />-->
-        <div class="row">
+        <h4 class="text-white">
+            Keeping Commonwealth citizens safe is of upmost importance. If you have specific skills or resources that you would be willing to allow PA Resource Managers to leverage please get involved, and create a profile. You will receive notifications from vetted Commonwealth resource managers based on your location and skills or resources you document.<br/><br/>
+            If you are a Commonwealth of PA Resource Manager please indicate that during the profile creation process. Administrators will follow up with you directly assist with the vetting process.
+        </h4>
+            <div class="row">
             <div class="col-md-6">
                 <form method="post" id="fileForm" role="form">
                     <fieldset>
@@ -178,6 +184,16 @@
                                 <input class="form-control" required type="text" name="zip" id="txt" maxlength="10" onkeyup="Validate(this);" value="@Request.Form["zip"]" placeholder="Zip Code" />
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="verifiedin"><span class="req">*</span> Verified User: </label>
+                            <div class="input-group">
+                                <span class="input-group-addon" style="height: 34px;"><i class="fa fa-check-circle"></i></span>
+                                <label class="switch">
+                                    <input type="checkbox" name="verifiedin" id="chk" onkeyup="Validate(this);" value="@Request.Form["verifiedin"]">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
                         <div id="modal_popup">
                         </div>
                         <!--<div class="form-group">
@@ -195,10 +211,12 @@
                 </form><!-- ends register form -->
             </div><!-- ends col-6 -->
             <div class="col-md-6">
-                <br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br /><br/>
                 <h4 class="text-white">
-                    By creating a profile, you'll be able to submit incident reports to the EyeOnSafety team. Using these reports, we'll be better able to inform our predictive analysis model.
+                    Follow the EyeOnSafety Team on Twitter to stay up to date with unsafe activity in the area:<br/>
                 </h4>
+                <a class="twitter-timeline" data-height="750" data-theme="dark" href="https://twitter.com/eye_safety?ref_src=twsrc%5Etfw">Tweets by eye_safety</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             <!-- Modal -->
             <div id="myModal" class="modal fade" role="dialog">
@@ -221,6 +239,13 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $("[name='verifiedin']").bootstrapSwitch();
+    </script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-switch.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="bootstrap-switch.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="../../Vendor/jquery/jquery.min.js"></script>
     <script src="../../Vendor/popper/popper.min.js"></script>
